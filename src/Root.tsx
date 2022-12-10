@@ -2,6 +2,9 @@ import {Composition} from 'remotion';
 import {Gradient} from './Gradient';
 import {Scene3} from './Scene3';
 import {Scene2} from './Scene2';
+import {Main} from './Main';
+import {Scene1} from './Scene1';
+import {GradientCircle} from './GradientCircle';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -17,6 +20,30 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 			></Composition>
 			<Composition
+				id="Scene1"
+				component={Scene1}
+				width={720}
+				height={1280}
+				durationInFrames={150}
+				fps={30}
+			></Composition>
+			<Composition
+				id="GradientCircle"
+				component={GradientCircle}
+				width={720}
+				height={1280}
+				durationInFrames={150}
+				fps={30}
+			></Composition>
+			<Composition
+				id="Scene2"
+				component={Scene2}
+				width={720}
+				height={1280}
+				durationInFrames={210}
+				fps={30}
+			></Composition>
+			<Composition
 				id="Scene3"
 				component={Scene3}
 				width={720}
@@ -29,11 +56,11 @@ export const RemotionRoot: React.FC = () => {
 				}}
 			></Composition>
 			<Composition
-				id="Scene2"
-				component={Scene2}
+				id="Main"
+				component={Main}
 				width={720}
 				height={1280}
-				durationInFrames={150}
+				durationInFrames={360}
 				fps={30}
 				defaultProps={{
 					topSongName: 'Go Flex',
