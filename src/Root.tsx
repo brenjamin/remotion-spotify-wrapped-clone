@@ -5,6 +5,9 @@ import {Scene2} from './Scene2';
 import {Main} from './Main';
 import {Scene1} from './Scene1';
 import {GradientCircle} from './GradientCircle';
+import {Wrapped} from './Wrapped';
+
+import stoney from './img/stoney.png';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -22,6 +25,14 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="Scene1"
 				component={Scene1}
+				width={720}
+				height={1280}
+				durationInFrames={210}
+				fps={30}
+			></Composition>
+			<Composition
+				id="Wrapped"
+				component={Wrapped}
 				width={720}
 				height={1280}
 				durationInFrames={150}
@@ -53,6 +64,7 @@ export const RemotionRoot: React.FC = () => {
 				defaultProps={{
 					topSongName: 'Go Flex',
 					topSongArtistName: 'Post Malone',
+					topSongCover: stoney,
 				}}
 			></Composition>
 			<Composition
@@ -60,11 +72,12 @@ export const RemotionRoot: React.FC = () => {
 				component={Main}
 				width={720}
 				height={1280}
-				durationInFrames={360}
+				durationInFrames={570}
 				fps={30}
 				defaultProps={{
 					topSongName: 'Go Flex',
 					topSongArtistName: 'Post Malone',
+					topSongCover: stoney,
 				}}
 			></Composition>
 		</>

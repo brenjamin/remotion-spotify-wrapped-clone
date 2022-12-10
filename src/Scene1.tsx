@@ -5,6 +5,8 @@ import rilokiley from './img/rilo-kiley.jpeg';
 import postmalone from './img/post-malone.jpeg';
 import hanszimmer from './img/hans-zimmer.jpeg';
 import theshins from './img/the-shins.jpeg';
+import {GradientCircle} from './GradientCircle';
+import {Wrapped} from './Wrapped';
 
 export const Scene1: React.FC = () => {
 	const {height} = useVideoConfig();
@@ -20,6 +22,12 @@ export const Scene1: React.FC = () => {
 			</Sequence>
 			<Sequence from={90} durationInFrames={Infinity}>
 				<FourFaces image={theshins} />
+			</Sequence>
+			<Sequence from={120} durationInFrames={Infinity}>
+				<GradientCircle />
+			</Sequence>
+			<Sequence from={160} durationInFrames={Infinity}>
+				<Wrapped />
 			</Sequence>
 		</AbsoluteFill>
 	);

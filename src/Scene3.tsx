@@ -40,7 +40,8 @@ const Title = styled.div`
 export const Scene3: React.FC<{
 	topSongName: string;
 	topSongArtistName: string;
-}> = ({topSongName, topSongArtistName}) => {
+	topSongCover: string;
+}> = ({topSongName, topSongArtistName, topSongCover}) => {
 	const frame = useCurrentFrame();
 	const {width, height, fps} = useVideoConfig();
 	const progress = spring({
@@ -127,7 +128,7 @@ export const Scene3: React.FC<{
 							transform: `scale(${coverScale})`,
 						}}
 					>
-						<Album />
+						<Album imageSrc={topSongCover} />
 					</div>
 				</AbsoluteFill>
 			</AbsoluteFill>
