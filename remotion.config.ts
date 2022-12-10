@@ -4,5 +4,6 @@
 
 import {Config} from 'remotion';
 
+Config.Rendering.setQuality(100);
 Config.Rendering.setImageFormat('jpeg');
 Config.Output.setOverwriteOutput(true);
