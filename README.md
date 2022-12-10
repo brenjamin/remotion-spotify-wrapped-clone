@@ -1,15 +1,8 @@
-# Remotion video
+# Remotion Spotify Wrapped video
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
-
-Welcome to your Remotion project!
+- A Spotify Wrapped video made with Remotion
+- Based on [this Youtube Tutorial](https://youtu.be/I-y_5H9-3gk)
+- The final mp4 video can be found at out/video.mp4
 
 ## Commands
 
